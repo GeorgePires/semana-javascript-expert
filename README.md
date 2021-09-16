@@ -1,8 +1,9 @@
 # Google Drive Clone - Semana JS Expert 5.0
 
-Seja bem vindo(a) à quinta Semana Javascript Expert. Este é o código inicial para iniciar nossa jornada.
+- Desenvolvido na quinta Semana Javascript Expert 🚀🚀. 
+- Este é o código inicial do projeto - Aula01.
 
-Marque esse projeto com uma estrela 🌟
+
 
 ## Preview
 
@@ -27,7 +28,7 @@ Marque esse projeto com uma estrela 🌟
 
 
 
-## Desafios para alunos pós projeto
+## 
 
 1. *Backend*: Salvar o arquivo na AWS ou qualquer serviço de storage
      - Nosso projeto hoje armazena arquivos em disco. o desafio é você via Stream, fazer upload para algum serviço na nuvem
@@ -38,14 +39,7 @@ Marque esse projeto com uma estrela 🌟
 3. *Infraestrutura*: Publicar aplicação com seu SSL customizado em máquina virtual
     - Você aprendeu a gerar SSL local, o desafio é você criar um certificado (pode ser com o *Let's Encrypt*) e adicionar na sua aplicação
 
-### Considerações
-- Tire suas dúvidas sobre os desafios em nossa comunidade, o objetivo é você aprender de forma divertida. Surgiu dúvidas? Pergunte por lá!
 
-- Ao completar qualquer um dos desafios, envie no canal **#desafios** da comunidade no **Discord**
-
-## Créditos ao Layout <3
-
-- O Layout foi adaptado a partir do projeto do brasileiro [Leonardo Santo](https://github.com/leoespsanto) disponibilizado no [codepen](https://codepen.io/leoespsanto/pen/KZMMKG). 
 
 ## FAQ 
 - `NODE_OPTIONS` não é um comando reconhecido pelo sistema, o que fazer?
