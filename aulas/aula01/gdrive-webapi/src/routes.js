@@ -1,9 +1,18 @@
 import { logger } from './logger.js'
+import FileHelper from './fileHelper.js'
+import { dirname, resolve } from 'path'
+import { fileURLToPath } from 'url'
+
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const defaultDownloadsFolder = resolve(__dirname, '../', "downloads ")
+
 
 export default class Routes {
     io
-    constructor() {
-
+    constructor(downloadsFolder = defaultDownloadsFolder) {
+        this.downloadsFolder = downloadsFolder
+        this.fileHelper = FileHelper
     }
     setSocketInstance(io) {
         this.io = io
@@ -18,12 +27,17 @@ export default class Routes {
         response.writeHead(204)
         response.end('Teste API OK!')
     }
+    
     async post(request, response) {
         logger.info('OK POST')
         response.end()
     }
+    
     async get(request, response) {
-        response.end('OK GET')
+        const files = await this.fileHelper.getFilesStatus(this.downloadsFolder)
+
+        response.writeHead(200)
+        response.end(JSON.stringify(files))
     }
 
     handler(request, response) {
